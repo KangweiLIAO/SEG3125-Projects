@@ -1,0 +1,12 @@
+/* import google font : Nunito */
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+html,
+body {
+	height: 100%;
+  outline: none;
+	color: #44476a;
+	background: #e6e7ee;
+	position: relative;
+	font-family: "Nunito", sans-serif;
+}

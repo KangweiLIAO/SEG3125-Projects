@@ -1,0 +1,180 @@
+/* SEG3125 Lab5 Group6  styles.css */
+html,
+body {
+	color: #44476a;
+	background: #e6e7ee;
+	font-family: "Nunito", sans-serif !important;
+}
+
+hr {
+	margin: 0;
+	margin-top: 0;
+	align-self: center;
+	width: 7rem;
+	border-top: #44476a solid 2px;
+}
+
+a {
+	color: inherit;
+	cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+.icon {
+	border-radius: 0 !important;
+	width: 1.2rem;
+}
+
+.sub-title {
+	font-size: larger;
+	font-weight: 600;
+}
+
+.neu-focus,
+.neu-raised {
+	border-radius: 16px;
+	transition: all 0.1s ease;
+	border: 1px solid #d1d9e6;
+	box-shadow: 2px 2px 5px #b8b9be, -3px -3px 7px #fff !important;
+}
+
+.navbar-nav a {
+	border-radius: 10px;
+	padding-left: 1rem !important;
+	padding-right: 1rem !important;
+	border: 0px solid #d1d9e6;
+	transition: all 0.1s ease-in;
+}
+.navbar-nav a:hover {
+	border: 1px solid #d1d9e6;
+}
+
+.neu-focus,
+.navbar-nav a:hover {
+	box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff !important;
+}
+
+.navbar .brand-name {
+	margin: 0;
+	font-size: 2rem;
+	font-family: "Akaya Telivigala", cursive !important;
+}
+
+.carousel {
+	align-self: center;
+	overflow: hidden;
+}
+
+.carousel-inner > .carousel-item {
+	max-height: 50vh;
+	border-radius: 16px;
+}
+
+.carousel-item::after {
+	/* Code for carousel-item::after inspired by 
+    (https://stackoverflow.com/questions/44463690/darkening-a-background-image-on-a-bootstrap-carousel) */
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.avatar-sm {
+	width: 1.7rem;
+	height: 1.7rem;
+}
+
+.card {
+	margin: 1rem;
+	border-radius: 10px;
+	background: #e6e7ee;
+}
+.card > img {
+	object-fit: cover;
+	border-radius: 10px;
+}
+.card span,
+.card p {
+	text-align: justify;
+}
+
+.card-comment {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.card-service {
+	max-width: 400px;
+	border: 0 !important;
+	padding: 0 !important;
+}
+.card-service > img {
+	max-height: 150px;
+	width: 100% !important;
+	border-bottom-left-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+}
+
+.card-expert {
+	max-width: 400px;
+	padding: 1rem;
+}
+.card-expert > img {
+	max-height: 200px;
+}
+
+.modal {
+	z-index: 20;
+}
+.modal-backdrop {
+	z-index: 10;
+}
+​ #book-form input {
+	width: 80%;
+	border-radius: 10px;
+}
+
+#testimonials-body {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: around;
+	overflow-x: auto;
+}
+
+#experts-main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	border-radius: 0;
+	border-left: 0;
+	border-right: 0;
+}
+
+#book-cvv {
+	width: 45%;
+}
+
+.footer-sticky {
+	border-left: 0;
+	border-right: 0;
+	padding-top: 1rem;
+	align-items: center;
+	border-radius: 0;
+	background: inherit;
+	position: sticky;
+	bottom: 0;
+}

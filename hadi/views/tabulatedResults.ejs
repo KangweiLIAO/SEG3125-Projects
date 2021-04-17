@@ -1,0 +1,124 @@
+<html lang="en-US">
+<link rel="stylesheet" href="/css/styles.css"> 
+<head>
+    <title>Survey Analysis</title>
+	<!--
+	<script>
+		function draw(){			
+			var canvas = document.getElementById('graph');
+			var ctx = canvas.getContext('2d');
+			
+			var width = 50;
+			var xPos = 50;
+			var base = 200;
+			
+			ctx.fillStyle = 'green';
+			
+			for (var i=0; i<results[0].length;i++){
+				var h = results[0][i].count*20;
+				ctx.fillRect(xPos, canvas.height - h, width, h);
+				xPos += width + 10;
+			}
+			
+		};
+	</script>-->
+</head>
+
+<body>
+    <h1>Survey analysis</h1>
+    <h2>Theme</h2>
+	<!--
+	<canvas id="graph" width="400" height="200" />
+	-->
+	<table>
+		<tr>
+			<th>Theme</th>
+			<th>Users</th>
+		</tr>
+		<% for (var i=0; i<results[0].length; i++){ %>
+		<tr>
+			<td><%= results[0][i].theme %></td>
+			<td><%= results[0][i].count %></td>
+		</tr>
+		<% } %>
+	</table>
+    <h2>How do you feel about the filters?</h2>
+	<table>
+		<tr>
+			<th>Filter Satisfaction</th>
+			<th>Users</th>
+		</tr>
+		<% for (var i=0; i<results[1].length; i++){ %>
+		<tr>
+			<td><%= results[1][i].filter %></td>
+			<td><%= results[1][i].count %></td>
+		</tr>
+		<% } %>
+	</table>
+    <h2>Easy to use?</h2>
+	<table>
+		<tr>
+			<th>Easy to Use?</th>
+			<th>Users</th>
+		</tr>
+		<% for (var i=0; i<results[2].length; i++){ %>
+		<tr>
+			<td><%= results[2][i].easy %></td>
+			<td><%= results[2][i].count %></td>
+		</tr>
+		<% } %>
+	</table>
+	<h2>Impression of the site</h2>
+	<table>
+		<tr>
+			<th>Site Impression</th>
+			<th>Users</th>
+		</tr>
+		<% for (var i=0; i<results[3].length; i++){ %>
+		<tr>
+			<td><%= results[3][i].experience %></td>
+			<td><%= results[3][i].count %></td>
+		</tr>
+		<% } %>
+	</table>
+	<h2>Sites frequented</h2>
+	<table>
+		<tr>
+			<th>Sites frequented</th>
+			<th>Users</th>
+		</tr>
+		<% for (var i=0; i<results[4].length; i++){ %>
+		<tr>
+			<td><%= results[4][i].site %></td>
+			<td><%= results[4][i].count %></td>
+		</tr>
+		<% } %>
+	</table>
+	<h2>Layout characterized as...</h2>
+	<table>
+		<tr>
+			<th>Layout characterization</th>
+			<th>Users</th>
+		</tr>
+		<% for (var i=0; i<results[5].length; i++){ %>
+		<tr>
+			<td><%= results[5][i].layout %></td>
+			<td><%= results[5][i].count %></td>
+		</tr>
+		<% } %>
+	</table>
+	<h2>Region of user</h2>
+	<table>
+		<tr>
+			<th>User Region</th>
+			<th>Users</th>
+		</tr>
+		<% for (var i=0; i<results[6].length; i++){ %>
+		<tr>
+			<td><%= results[6][i].region %></td>
+			<td><%= results[6][i].count %></td>
+		</tr>
+		<% } %>
+	</table>
+</body>
+</html>

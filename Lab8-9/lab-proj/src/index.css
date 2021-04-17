@@ -1,0 +1,160 @@
+/* import google font : Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+	--primary: #ef4c26 !important;
+}
+
+html,
+body {
+	height: 100%;
+	color: white;
+	outline: none !important;
+	background: black !important;
+	position: relative;
+	font-family: "Roboto", sans-serif !important;
+}
+
+a {
+	color: inherit !important;
+}
+
+button:focus {
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+#div-title,
+#social-info,
+.navbar-brand,
+#edition-description {
+	color: white !important;
+}
+
+#div-title {
+	padding: 5rem 0;
+}
+
+#div-review {
+	color: black !important;
+	background-color: var(--primary);
+}
+
+#div-edition {
+	padding: 5rem 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#btngroup-editions > .btn {
+	border: 0;
+	font-size: larger;
+	background-color: transparent !important;
+	border-right: 3px solid var(--primary) !important;
+	border-color: var(--primary) !important;
+	box-shadow: none !important;
+}
+
+#btngroup-editions > .active,
+#btngroup-editions > .btn:hover,
+#btngroup-editions > .btn:focus {
+	color: var(--primary) !important;
+}
+#btngroup-editions > .btn:last-child {
+	border: 0 !important;
+}
+
+#btn-language,
+#btn-language-mobile {
+	font-size: 0.8rem;
+	margin-right: 1rem;
+	background-color: transparent !important;
+	color: var(--primary) !important;
+	padding: 0 1rem !important;
+	border: 1px solid var(--primary);
+}
+#btn-language-mobile {
+	margin-top: 0.5rem !important;
+	margin-left: 1rem !important;
+}
+
+#edition-img {
+	width: 35% !important;
+	height: 100% !important;
+	margin: 0 2rem;
+	border-radius: 5px !important;
+}
+
+.footer > hr {
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(
+		to right,
+		rgba(255, 255, 255, 0),
+		rgba(255, 255, 255, 0.75),
+		rgba(255, 255, 255, 0)
+	);
+	color: grey;
+}
+
+.btn-primary {
+	border-color: var(--primary) !important;
+	background-color: var(--primary) !important;
+}
+
+.dropdown-toggle {
+	width: 100%;
+	border-width: 2px;
+	background-color: transparent !important;
+}
+.dropdown-menu {
+	width: 100%;
+}
+.dropdown-item:active {
+	background-color: var(--primary);
+}
+
+.row {
+	margin: 0 !important;
+}
+
+.title {
+	font-size: 64px;
+	font-weight: bolder;
+	color: var(--primary);
+}
+
+.img-main {
+	border-radius: 5px !important;
+	max-width: 100%;
+}
+
+.media-sm-main-image::after {
+	background-color: "rgba(0, 0, 0, 0.7)";
+}
+
+.modal-content {
+	color: black !important;
+	backdrop-filter: blur(5px);
+}
+.navbar {
+	background-color: black !important;
+}
+.nav-link {
+	color: white !important;
+	padding: 0.5rem 1rem !important;
+	transition: all 0.2s linear;
+}
+.nav-link:hover {
+	color: var(--primary) !important;
+}
+
+.progress {
+	height: 3px !important;
+	border-radius: 0 !important;
+}
+.progress-bar {
+	background-color: var(--primary) !important;
+}

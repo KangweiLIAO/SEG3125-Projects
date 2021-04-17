@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+	<%- include("./partials/head.ejs") %>
+  <link rel="stylesheet" href="/css/styles.css"> 
+  <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" 
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" 
+        crossorigin="anonymous" />
+        <title> Questionnaire </title>
+    </head>
+    <body>
+         <!-- Title -->
+         <section class="section">
+            <div class="center" style="max-width: 1140px;">
+                <div class="container-title row">
+                    <!-- URL field -->
+                    <h1 class="label-text-title"> UI survey for  
+                        <a href="https://www.ign.com/ca" 
+                        style="label-text-decoration: none; color:#bf1313"> IGN.com </a>  
+                    </h1>
+                    <p class="label-text-subtitle"> This survey will be about <strong>IGN.com</strong>, which provides sharp opinions and ground-breaking content 
+                        for games and entertainment for more than 254 million fans across 28 platforms and 112 countries.</p>
+                </div>
+                <!-- Go button -->
+                <div class="flex flex-center">
+                    <div class="input-group row rounded" style="width: 70%;">
+                        <a href="https://www.ign.com/ca" class="input-link" style="color: #44476a;"> https://www.ign.com/ca </a>
+                        <div style="margin-right: 0px; display: flex; word-wrap: break-word;">
+                            <button class="btn btn-go rounded raised" onclick="location.href='https://www.ign.com/ca'"> Go </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Gallery -->
+            <div class="flex flex-center">
+                <div id="gallery" class="img-gallery rounded margin-tb-1r raised">
+                    <div class="img-inner rounded" style="height: 400px;">
+                        <a href="https://www.ign.com/ca">
+                            <img class="img-title" src="./imgs/4.png" alt="website logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+         </section>
+        <!-- Content -->
+        <section class="section" style="margin-top: .5rem;">
+            <div class="container-center" style="margin-top: 20px;">
+                <form action="" method="POST">
+                    <!-- Submission form -->
+                    <div id="block1" class="rounded margin-tb-1r raised center">
+                        <div name="single-choice-1" style="padding-bottom: .5rem;">
+                            <!-- Question: theme -->
+                            <p> Do you prefer IGN classic (light) or dark mode? </p>
+                            <div class="neumorphism">
+                                <input class="neubtn" type="radio" name="theme" id="sc-1-light" value="light" checked>
+                                <label class="label" for="sc-1-light">
+                                    <span class="label-text"> Light mode </span>
+                                </label>
+                            </div>
+                            <div class="neumorphism">
+                                <input class="neubtn" type="radio" name="theme" id="sc-1-dark" value="dark">
+                                <label class="label" for="sc-1-dark">
+                                    <span class="label-text"> Dark mode </span>
+                                </label>
+                            </div>
+                        </div>
+                        <hr>
+                        <div name="single-choice-2" style="padding-bottom: 1rem;">
+                            <p> Are you satisfied with the number of options to filter news? </p>
+                            <div class="neumorphism">
+                                <input class="neubtn" type="radio" name="filter" id="sc-2-satisfied" value="satisfied">
+                                <label class="label" for="sc-2-satisfied">
+                                    <span class="label-text"> I'm satisfied </span>
+                                </label>
+                            </div>
+                            <div class="neumorphism">
+                                <input class="neubtn" type="radio" name="filter" id="sc-2-dissatisfied" value="dissatisfied" checked>
+                                <label class="label" for="sc-2-dissatisfied">
+                                    <span class="label-text"> I would like more </span>
+                                </label>
+                            </div>
+                        </div>
+                        <hr>
+                        <div name="single-choice-3" style="padding-bottom: 1rem;">
+                            <p> Does the overall design makes content easy to find? </p>
+                            <div class="neumorphism">
+                                <input class="neubtn" type="radio" name="easy" id="sc-3-yes" value="yes">
+                                <label class="label" for="sc-3-yes">
+                                    <span class="label-text"> Yes </span>
+                                </label>
+                            </div>
+                            <div class="neumorphism">
+                                <input class="neubtn" type="radio" name="easy" id="sc-3-no" value="no" checked>
+                                <label class="label" for="sc-3-no">
+                                    <span class="label-text"> No </span>
+                                </label>
+                            </div>
+                        </div>
+                        <hr>
+                        <div name="single-choice-4" style="padding-bottom: 1.5rem;">
+                            <!-- Question: color -->
+                            <p> What is your experience with using the site? </p>
+                            <div class="neumorphism">
+                                <input class="neubtn" type="radio" name="experience" id="sc-4-perfect" value="perfect">
+                                <label class="label" for="sc-4-perfect">
+                                    <span class="label-text"> Perfect </span>
+                                </label>
+                            </div>
+                            <div class="neumorphism">
+                                <input class="neubtn" type="radio" name="experience" id="sc-4-good" value="good">
+                                <label class="label" for="sc-4-good">
+                                    <span class="label-text"> Good </span>
+                                </label>
+                            </div>
+                            <div class="neumorphism">
+                                <input class="neubtn" type="radio" name="experience" id="sc-4-normal" value="normal" checked>
+                                <label class="label" for="sc-4-normal">
+                                    <span class="label-text"> Normal </span>
+                                </label>
+                            </div>
+                            <div class="neumorphism">
+                                <input class="neubtn" type="radio" name="experience" id="sc-4-bad" value="bad">
+                                <label class="label" for="sc-4-bad">
+                                    <span class="label-text"> Bad </span>
+                                </label>
+                            </div>
+                            <div class="neumorphism">
+                                <input class="neubtn" type="radio" name="experience" id="sc-4-worst" value="worst">
+                                <label class="label" for="sc-4-worst">
+                                    <span class="label-text"> Worst </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="block2" class="flex flex-start nowrap margin-tb-2r"  style="align-items: stretch;">
+                        <div class="inline-flex rounded raised" style="min-width: 40%;">
+                            <div class="center" style="display: inline-block;">
+                                <p style="padding: 15px 0 0 0;"> Which sites do you frequent for news on gaming? </p>
+                                <div>
+                                    <!-- Question: frequent -->
+                                    <ul class="checkboxes" style="padding: 0;">
+                                        <li class="neumorphism" style="display: block; margin-left: 2rem;">
+                                            <div class="neumorphism">
+                                                <input type="checkbox" id="IGN" class="neubtn" name="site" value="IGN">
+                                                <label class="label" for="IGN">
+                                                    <span class="label-text"> IGN </span>
+                                                </label>
+                                            </div>
+                                            <br>
+                                            <div class="neumorphism">
+                                                <input type="checkbox" id="Reddit" class="neubtn" name="site" value="Reddit">
+                                                <label class="label" for="Reddit">
+                                                    <span class="label-text"> Reddit </span>
+                                                </label>
+                                            </div>
+                                            <br>
+                                            <div class="neumorphism">
+                                                <input type="checkbox" id="Twitter" class="neubtn" name="site" value="Twitter">
+                                                <label class="label" for="Twitter">
+                                                    <span class="label-text"> Twitter </span>
+                                                </label>
+                                            </div>
+                                            <br>
+                                            <div class="neumorphism">
+                                                <input type="checkbox" id="GameInformer" class="neubtn" name="site" value="Game Informer">
+                                                <label class="label" for="GameInformer">
+                                                    <span class="label-text"> Game Informer </span>
+                                                </label>
+                                            </div>
+                                            <br>
+                                            <div class="neumorphism">
+                                                <input type="checkbox" id="Polygon" class="neubtn" name="site" value="Polygon">
+                                                <label class="label" for="Polygon">
+                                                    <span class="label-text"> Polygon </span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div>
+                                    <!-- Question: frequent -->
+                                    <p style="padding: 15px 0 0 0;"> How do you feel about the layout of the site? </p>
+                                    <ul class="checkboxes" style="padding: 0;">
+                                        <li class="neumorphism" style="display: block; margin-left: 2rem;">
+                                            <div class="neumorphism">
+                                                <input type="checkbox" id="Sparse" class="neubtn" name="layout" value="sparse">
+                                                <label class="label" for="Sparse">
+                                                    <span class="label-text"> Sparse </span>
+                                                </label>
+                                            </div>
+                                            <br>
+                                            <div class="neumorphism">
+                                                <input type="checkbox" id="Crowded" class="neubtn" name="layout" value="crowded">
+                                                <label class="label" for="Crowded">
+                                                    <span class="label-text"> Crowded </span>
+                                                </label>
+                                            </div>
+                                            <br>
+                                            <div class="neumorphism">
+                                                <input type="checkbox" id="Orderly" class="neubtn" name="layout" value="orderly">
+                                                <label class="label" for="Orderly">
+                                                    <span class="label-text"> Orderly </span>
+                                                </label>
+                                            </div>
+                                            <br>
+                                            <div class="neumorphism">
+                                                <input type="checkbox" id="Messy" class="neubtn" name="layout" value="messy">
+                                                <label class="label" for="Messy">
+                                                    <span class="label-text"> Messy </span>
+                                                </label>
+                                            </div>
+                                            <br>
+                                            <div class="neumorphism">
+                                                <input type="checkbox" id="Formal" class="neubtn" name="layout" value="formal">
+                                                <label class="label" for="Formal">
+                                                    <span class="label-text"> Formal </span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div class="inline-flex wrap flex-center">
+                                    <!-- Question: region -->
+                                    <p>From which region are you browsing this website</p>
+									<!--
+                                    <div>
+                                        <button class="btn inline-flex btn-primary focus" type="button" style="margin-right: 10px;"> Region </button>
+                                        <button class="btn inline-flex btn-primary raised btn-toggle" type="button" 
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="fas fa-angle-down dropdown-arrow"></span>
+                                            <a href="#"></a>
+                                        </button>
+                                        <ul>
+                                            <li><a href="#"></a></li>
+                                        </ul>
+                                    </div> -->
+                                    <select class="select" name="region" id="region">
+                                        <option value="none" selected="selected">Select Region</option>
+                                        <option value="US&CA">US and Canada</option>
+                                        <option value="UK&IR">UK and Ireland</option>
+                                        <option value="AU&NZ">Australia and New Zealand</option>
+                                        <option value="latin">Latin America</option>
+                                        <option value="brazil">Brazil</option>
+                                        <option value="middleEast">Middle East</option>
+                                        <option value="southeastAsia">Southeast Asia</option>
+                                        <option value="africa">Africa</option>
+                                        <option value="india">India</option>
+                                        <option value="germany">Germany</option>
+                                        <option value="france">France</option>
+                                        <option value="spain">Spain</option>
+                                        <option value="italy">Italy</option>
+                                        <option value="dutch">Belgium, Netherlands or Luxembourg</option>
+                                        <option value="nordic">Nordic</option>
+                                        <option value="portugal">Portugal</option>
+                                        <option value="greece">Greece</option>
+                                        <option value="poland">Poland</option>
+                                        <option value="czech">Czechia or Slovakia</option>
+                                        <option value="hungary">Hungary</option>
+                                        <option value="adria">Adriatic</option>
+                                        <option value="russia">Russia</option>
+                                        <option value="turkey">Turkey</option>
+                                        <option value="israel">Israel</option>
+                                        <option value="japan">Japan</option>
+                                        <option value="china">China</option>
+                                        <option value="korea">Korea</option>
+                                    </select> 
+                                </div>
+                            </div>
+                        </div>
+                        <div id="block3" class="inline-flex rounded wrap margin-tb-1r raised" 
+                        style="margin: 0 0 0 30px;">
+                            <div class="flex flex-center margin-all-p5r nowrap">
+                                <label for="fname" style="min-width: 20%;"> First Name </label>
+                                <input class="input-text neumorphism-focus sm-rounded" id="fname"
+                                    type="text" placeholder="First Name">
+                            </div>
+                            <div class="flex flex-center margin-all-p5r nowrap">
+                                <label for="lname" style="min-width: 20%;"> Last Name </label>
+                                <input class="input-text neumorphism-focus sm-rounded" id="lname"
+                                    type="text" placeholder="Last Name">
+                            </div>
+                            <div class="flex flex-center margin-all-p5r nowrap">
+                                <label for="email" style="min-width: 20%;"> Email address </label>
+                                <input class="input-text neumorphism-focus sm-rounded" id="email"
+                                    type="email" placeholder="name@domain.com">
+                            </div>
+                            <hr style="align-self: center;">
+                            <div class="flex flex-center wrap .margin-all-p5r">
+                                <!-- Comment box -->
+                                <label for="comment"> Comment </label>
+                                <textarea class="textarea neumorphism-focus sm-rounded" id="comment" rows="13" cols="50" 
+                                    placeholder="Please leave your comment here..." spellcheck="false"></textarea>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="center">
+                        <!-- Functional Buttons -->
+                        <input class="btn rounded" type="submit" value="Submit"
+                        style="background: linear-gradient(to bottom right, #bf1313, #c55c15);
+                                padding: 1rem 10rem; margin: 20px 0; color: #e6e7ee; font-weight: 600; font-size: 1.2rem;">
+                    </div>
+                </form>
+            </div>
+        </section>
+		<%- include("./partials/footer.ejs") %>
+		<script src="/public/serializeArray.js"></script>
+	</body>
+</html>

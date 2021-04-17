@@ -1,0 +1,116 @@
+/* SEG3125 Lab4 Group6  styles.css */
+html,
+body {
+	color: #44476a;
+	background: #e6e7ee;
+	font-family: "Nunito", sans-serif !important;
+}
+
+hr {
+	margin: 0;
+	margin-top: 0;
+	align-self: center;
+	width: 7rem;
+	border-top: #44476a solid 2px;
+}
+
+a {
+	color: inherit;
+	cursor: pointer;
+}
+
+.neu-focus,
+.neu-raised {
+	border-radius: 16px;
+	transition: all 0.3s ease;
+	border: 1px solid #d1d9e6;
+	box-shadow: 6px 6px 10px #b8b9be, 
+				-6px -6px 10px #fff !important;
+}
+
+.neu-focus {
+	box-shadow: inset 3px 3px 7px #b8b9be, 
+				inset -3px -3px 7px #fff !important;
+}
+
+.navbar .brand-name {
+	margin: 0;
+	font-size: 2rem;
+	font-family: "Akaya Telivigala", cursive !important;
+}
+
+.carousel {
+	align-self: center;
+	overflow: hidden;
+}
+
+.carousel-inner > .carousel-item {
+	max-height: 50vh;
+	border-radius: 16px;
+}
+
+.carousel-item::after {
+	/* Code for carousel-item::after inspired by 
+    (https://stackoverflow.com/questions/44463690/darkening-a-background-image-on-a-bootstrap-carousel) */
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.card {
+	margin: 15px;
+	padding: 15px;
+	border-radius: 10px;
+	background: #e6e7ee;
+}
+.card > img {
+	border-radius: 10px;
+}
+.card span, .card p {
+	text-align: justify;
+}
+.service-card {
+	max-width: 40%;
+	border: 0 !important;
+	padding: 0 !important;
+}
+.service-card > img {
+	max-width: 100%;
+	max-height: 150px;
+	object-fit: cover;
+	width: 100% !important;
+	border-bottom-left-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+}
+.expert-card {
+	width: 50%;
+}
+.expert-card > img {
+	object-fit: cover;
+	max-height: 200px;
+}
+
+.sub-title {
+	margin-top: 10px;
+	font-size: larger;
+	font-weight: 600;
+}
+
+.avatar-sm {
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+.footer {
+	border-left: 0;
+	border-right: 0;
+	padding-top: 1rem;
+	align-items: center;
+	background: inherit;
+	position: sticky;
+	bottom: 0;
+}

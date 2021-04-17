@@ -1,0 +1,75 @@
+{
+	"button": {
+		"close": "Fermer",
+		"purchase": "Acheter",
+		"submitTicket": "Envoyer"
+	},
+	"dropdown": {
+		"platform": {
+			"default": "Sélectionnez votre plateforme",
+			"pc": "PC",
+			"ps4": "PS4",
+			"xbox": "Xbox"
+		}
+	},
+	"footer": {
+		"disclaimer": "Ce jeu est un produit d'EA Inc. Les ressources utilisées dans ce projet (site Web) sont uniquement à des fins d'étude.",
+		"social": "Rejoindre la conversation"
+	},
+	"game": {
+		"description": "Une aventure coopérative innovante. Un gameplay varié unique et une narration émotionnelle s'entremêlent dans un voyage fantastique. Fondé pour repousser les limites créatives de ce qui est possible dans les jeux.",
+		"edition": {
+			"definitive": {
+				"description": "Édition standard + Tous les bonus dans l'édition premium + Tous les DLC à l'avenir!",
+				"title": "Édition Définitive"
+			},
+			"premium": {
+				"description": "Le jeu de base avec une copie supplémentaire GRATUITE du jeu et 2 personnages personnalisés + 4 skin d'arme fantastique!",
+				"title": "Édition Premium"
+			},
+			"standard": {
+				"description": "Le jeu de base avec une copie supplémentaire GRATUITE du jeu que vous pouvez partager avec votre ami!",
+				"title": "Édition Standard"
+			}
+		},
+		"title": "Il faut être deux"
+	},
+	"navbar": {
+		"about": "Sur",
+		"home": "Accueil",
+		"shop": "Boutique",
+		"support": "Soutien"
+	},
+	"review": {
+		"banner1": {
+			"author": "Plahaha",
+			"review": "C'est un jeu de plateforme charmant, ludique, serré et extrêmement varié qui parvient à rester frais heure après heure, comme peu d'autres jeux le peuvent."
+		},
+		"banner2": {
+			"author": "Anaboboa",
+			"review": "Il suffit de prendre un bon ami et de jouer à cette incroyable aventure coopérative."
+		},
+		"topReview": {
+			"author": "gamerant",
+			"link1": "Lien vers les revues de jeux",
+			"link2": "Lien vers l'article",
+			"review": "C'est un jeu incroyable qui garde les joueurs sur leurs gardes avec son rythme impeccable à la fois dans l'histoire et le gameplay. Ce jeu de plateforme 3D mélange les genres à chaque étape dans une balade magique à travers différents habitants. Au centre, cependant, se trouve une grande histoire d'amour pleine de moments réconfortants et de rires pour démarrer.",
+			"title": "Pour un aperçu"
+		}
+	},
+	"support": {
+		"description": "La description",
+		"dropdown": {
+			"account": "Problème de compte",
+			"other": "Autre",
+			"technical": "Problème Technique",
+			"title": "Type de problème"
+		},
+		"email": "Email du contact",
+		"emailAlert": "Nous ne partagerons jamais votre e-mail avec qui que ce soit",
+		"instruction": "Veuillez indiquer clairement votre problème, nous vous contacterons dans les plus brefs délais.",
+		"subject": "Assujettir",
+		"title": "Ticket de support",
+		"username": "Nom d'utilisateur dans le jeu"
+	}
+}

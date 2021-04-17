@@ -1,0 +1,28 @@
+{
+  "name": "lab6",
+  "version": "1.0.0",
+  "description": "Node.js Application for SEG3125-Lab6",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": [
+    "Kangwei Liao",
+    "Langqing Zou",
+    "Hadi Sukkar"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "@popperjs/core": "^2.9.1",
+    "bootstrap": "^4.6.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "jquery": "^3.6.0",
+    "lodash": "^4.17.21",
+    "mongoose": "^5.12.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7",
+    "popper.js": "^1.16.1"
+  }
+}

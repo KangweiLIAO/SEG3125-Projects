@@ -1,0 +1,75 @@
+{
+	"button": {
+		"close": "Close",
+		"purchase": "Buy Now",
+		"submitTicket": "Submit Ticket"
+	},
+	"dropdown": {
+		"platform": {
+			"default": "Select your platform",
+			"pc": "PC",
+			"ps4": "PS4",
+			"xbox": "Xbox"
+		}
+	},
+	"footer": {
+		"disclaimer": "This game is a product of EA Inc. The resources used in this project (website) is only for study purpose only.",
+		"social": "JOIN THE CONVERSATION"
+	},
+	"game": {
+		"description": "An innovative co-op adventure. Uniquely varied gameplay and emotional storytelling intertwine in a fantastical journey. Founded to push the creative boundaries of what's possible in games.",
+		"edition": {
+			"definitive": {
+				"description": "Standard edition + All bonus in premium edition + All DLCs in the future!",
+				"title": "Definitive Edition"
+			},
+			"premium": {
+				"description": "The base game with an FREE extra copy of the game and 2 customize character + 4 fantastic weapon skin!",
+				"title": "Premium Edition"
+			},
+			"standard": {
+				"description": "The base game with an FREE extra copy of the game which you can share it with your friend !",
+				"title": "Standard Edition"
+			}
+		},
+		"title": "It Takes Two"
+	},
+	"navbar": {
+		"about": "About",
+		"home": "Home",
+		"shop": "Shop",
+		"support": "Support"
+	},
+	"review": {
+		"banner1": {
+			"author": "Plahaha",
+			"review": "This is a charming, playful, tight, and extremely varied platformer which manages to stay fresh hour after hour, in a way few other games can."
+		},
+		"banner2": {
+			"author": "Anaboboa",
+			"review": "Just grab a good friend and go play this amazing coop adventure."
+		},
+		"topReview": {
+			"author": "gamerant",
+			"link1": "Link to game reviews",
+			"link2": "Link to the article",
+			"review": "This is an amazing game that keeps players on their toes with its impeccable pacing in both story and gameplay. This 3D platformer mixes genres every step of the way in a magical ride through different locals. At the center, though, is a great love story full of heartwarming moments and plenty of laughs to boot.",
+			"title": "Top Review"
+		}
+	},
+	"support": {
+		"description": "Description",
+		"dropdown": {
+			"account": "Account Issue",
+			"other": "Other",
+			"technical": "Technical Issue",
+			"title": "Issue Type"
+		},
+		"email": "Contact Email",
+		"emailAlert": "We'll never share your email with anyone else",
+		"instruction": "Please clearly state your problem here, we will contact you as soon as possible.",
+		"subject": "Subject",
+		"title": "Support Ticket",
+		"username": "Username in game"
+	}
+}

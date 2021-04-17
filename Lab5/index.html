@@ -1,0 +1,388 @@
+<!-- SEG3125 Lab5 Group6 index.html -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+			integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+			crossorigin="anonymous"
+		/>
+		<!-- FontAwesome CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+			integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+			crossorigin="anonymous"
+		/>
+		<!-- Google Font -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Nunito&display=swap"
+		/>
+		<!-- My CSS -->
+		<link rel="stylesheet" href="styles/styles.css" />
+		<title>BikePie</title>
+	</head>
+	<body>
+		<nav
+			class="navbar navbar-light neu-raised"
+			style="
+				z-index: 1;
+				border-radius: 0;
+				position: sticky;
+				top: 0;
+				background: #e6e7ee;
+			"
+		>
+			<div class="d-flex flex-nowrap align-items-center">
+				<a class="navbar-brand p-0" href="" style="border-radius: 12px">
+					<img
+						src="res/logo.png"
+						width="50"
+						height="50"
+						class="d-inline-block align-top"
+						alt="logo"
+						loading="lazy"
+					/>
+				</a>
+				<p class="brand-name">BikePie</p>
+			</div>
+			<div class="navbar-expand" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-link active" href="#home">Home</a>
+					<a class="nav-link" href="#services">Services</a>
+					<a class="nav-link" href="#contact">Contact</a>
+					<a
+						class="nav-link"
+						href="https://www.google.ca/maps/dir//Montpetit+Hall+(MNT)/@45.4223808,-75.6831106,19.5z/data=!4m9!4m8!1m0!1m5!1m1!1s0x4cce05087c29c345:0xb7bfd525f87889c5!2m2!1d-75.6826952!2d45.4224233!3e3"
+						>Get Direction</a
+					>
+				</div>
+			</div>
+		</nav>
+		<div id="carousel-main">
+			<div id="carouselPics" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carouselPics" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselPics" data-slide-to="1"></li>
+					<li data-target="#carouselPics" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img
+							class="d-block w-100"
+							src="https://w.wallhaven.cc/full/4v/wallhaven-4vyk28.jpg"
+							alt="First img"
+						/>
+						<div class="carousel-caption d-none d-md-block">
+							<h3>BikePie Repair Shop</h3>
+							<p>We provide the best repair services in Ottawa</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img
+							class="d-block w-100"
+							src="https://w.wallhaven.cc/full/nz/wallhaven-nz511w.jpg"
+							alt="Second img"
+						/>
+						<div class="carousel-caption d-none d-md-block">
+							<h3>Any Bike Any Where In Ottawa</h3>
+							<p>
+								We come to you to provide our first-class bike repair
+								services
+							</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img
+							class="d-block w-100"
+							src="https://w.wallhaven.cc/full/nr/wallhaven-nrdkyq.jpg"
+							alt="Third img"
+						/>
+						<div class="carousel-caption d-none d-md-block">
+							<h3>Little Touch-Ups to Complete Overhauls</h3>
+							<p>
+								BikePie will provide whatever service you desire at
+								affordable prices.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div
+			id="main"
+			class="container-fluid d-flex flex-column justify-content-between p-0"
+		>
+			<div
+				id="testimonials-main"
+				class="container-fluid neu-raised d-flex flex-column align-items-center text-center rounded-0 p-2 border-0"
+			>
+				<div>
+					<span class="sub-title"> Testimonials </span>
+					<hr />
+				</div>
+				<div id="testimonials-body">
+					<!-- Customers' comments -->
+				</div>
+			</div>
+			<div
+				id="services-main"
+				class="container-fluid neu-focus rounded-0 border-0 d-flex flex-column align-items-center text-center pt-3"
+			>
+				<div>
+					<span class="sub-title"> Services </span>
+					<hr />
+				</div>
+				<div id="services-body" class="d-flex flex-wrap justify-content-around">
+					<!-- Service cards -->
+				</div>
+				<div id="book-btn" class="w-100 mt-2">
+					<a
+						id="book-btn"
+						class="btn btn-primary w-100"
+						data-toggle="modal"
+						data-target="#book-modal"
+					>
+						Book Now
+					</a>
+				</div>
+				<div id="services-popup">
+					<!-- Booking popup -->
+					<div
+						class="modal fade"
+						id="book-modal"
+						tabindex="-1"
+						aria-labelledby="bookModalLabel"
+						aria-hidden="true"
+					>
+						<div class="modal-content modal-dialog">
+							<div class="modal-header">
+								<h5 class="modal-title" id="staticBackdropLabel">
+									Booking Information
+								</h5>
+								<button
+									type="button"
+									class="close"
+									data-dismiss="modal"
+									aria-label="Close"
+								>
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<form id="book-form" class="modal-body form-group">
+								<p class="sub-title">Basic information</p>
+								<div class="input-group mb-3">
+									<div class="input-group-prepend">
+										<span class="input-group-text">Email</span>
+									</div>
+									<input
+										required
+										type="email"
+										id="book-email"
+										pattern="[a-z0-9|A-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+										class="form-control"
+										placeholder="Your email address"
+									/>
+								</div>
+								<div class="input-group mb-3">
+									<div class="input-group-prepend">
+										<span class="input-group-text">First Name</span>
+									</div>
+									<input
+										required
+										type="text"
+										id="book-firstname"
+										class="form-control"
+										placeholder="First Name"
+									/>
+								</div>
+								<div class="input-group mb-3">
+									<div class="input-group-prepend">
+										<span class="input-group-text">Last Name</span>
+									</div>
+									<input
+										required
+										type="text"
+										id="book-lastname"
+										class="form-control"
+										placeholder="Last Name"
+									/>
+								</div>
+								<div class="input-group mb-3">
+									<div class="input-group-prepend">
+										<span class="input-group-text">Address</span>
+									</div>
+									<input
+										required
+										type="text"
+										id="book-address"
+										class="form-control"
+										placeholder="Enter a location"
+									/>
+								</div>
+								<div class="input-group mb-3">
+									<div class="input-group-prepend">
+										<span class="input-group-text">Phone</span>
+									</div>
+									<input
+										required
+										type="tel"
+										id="book-phone"
+										pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}|[0-9]{3}[0-9]{3}[0-9]{4}"
+										class="form-control"
+										placeholder="xxx-xxx-xxxx"
+									/>
+								</div>
+								<div class="input-group mb-3">
+									<div class="input-group-prepend">
+										<span class="input-group-text"
+											>Date of Appointment</span
+										>
+									</div>
+									<input
+										required
+										type="datetime-local"
+										id="book-date"
+										class="form-control"
+										placeholder="Enter a date"
+									/>
+								</div>
+								<p class="sub-title">Payment Method</p>
+								<div class="d-flex justify-content-between">
+									<div class="input-group mb-3 w-50">
+										<div class="input-group-prepend">
+											<span class="input-group-text">Owner</span>
+										</div>
+										<input
+											required
+											type="text"
+											id="book-owner"
+											class="form-control"
+											placeholder="Owner"
+										/>
+									</div>
+									<div id="book-cvv" class="input-group mb-3">
+										<div class="input-group-prepend">
+											<span class="input-group-text">CVV</span>
+										</div>
+										<input
+											required
+											type="number"
+											pattern="/^[0-9]{.3}$/"
+											class="form-control"
+											placeholder="3-digits CVV"
+										/>
+									</div>
+								</div>
+								<div class="input-group mb-3">
+									<div class="input-group-prepend">
+										<span class="input-group-text"
+											>Credit card number</span
+										>
+									</div>
+									<input
+										required
+										type="tel"
+										id="book-card"
+										class="form-control"
+										pattern="^4[0-9]{12}(?:[0-9]{3})?$"
+										placeholder="Your 16-digits visa card number"
+									/>
+								</div>
+							</form>
+							<div class="modal-footer">
+								<button
+									type="button"
+									class="btn btn-secondary"
+									data-dismiss="modal"
+								>
+									Close
+								</button>
+								<button
+									type="submit"
+									class="btn btn-primary"
+									form="book-form"
+								>
+									Book Now
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="experts-main" class="container-fluid neu-raised mt-5 pt-3">
+				<div>
+					<div class="d-flex justify-content-center align-content-around">
+						<span class="sub-title"> Experts </span>
+					</div>
+					<hr />
+				</div>
+				<div id="experts-body" class="d-flex flex-wrap justify-content-around">
+					<!-- Experts gallery -->
+				</div>
+			</div>
+			<div
+				id="contact"
+				class="container-fluid neu-focus d-flex justify-content-center flex-column text-center rounded-0 p-3 border-0"
+			>
+				<span class="sub-title"> Contact </span>
+				<hr class="mb-3" />
+				<p>
+					<i class="fas fa-phone"></i
+					><strong>&nbsp;Phone number:</strong> 343-000-0000
+				</p>
+				<p>
+					<i class="far fa-envelope"></i
+					><strong>&nbsp;Email:</strong> bikepiecustomer@bikepie.com
+				</p>
+				<address>
+					You can Find us at
+					<strong
+						>3rd floor in Montpetit Hall (MNT), 125 University Private,
+						Ottawa, ON K1N 1A2</strong
+					>
+				</address>
+				<span class="ml-4 mr-4 mt-0 mb-3 text-justify">
+					We will let you know the earliest we can come by. You don't even have
+					to be home. If you can leave your bike in the backyard or somewhere
+					that we have access to, we will make sure it is tuned up, and you can
+					pay by e-transfer after you get home and go for a test ride, with a
+					smile.</span
+				>
+			</div>
+		</div>
+		<footer class="container-fluid footer-sticky neu-raised">
+			<p id="signature" class="text-center font-weight-bolder">
+				&copy;2021 Site created by Hadi Sukkar, Kangwei Liao and Langqing Zou
+			</p>
+		</footer>
+		<!-- Bootstrap Bundle -->
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+			crossorigin="anonymous"
+		></script>
+		<!-- My scripts -->
+		<script src="scripts/main.js"></script>
+		<script src="scripts/comments.js"></script>
+		<script src="scripts/services.js"></script>
+		<script src="scripts/experts.js"></script>
+		<!-- Google API -->
+		<script
+			async
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-szho-YRpSK6UlVhvJnVmXfezuv68Veo&libraries=places&callback=initMap"
+		></script>
+	</body>
+</html>
